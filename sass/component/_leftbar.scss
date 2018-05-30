@@ -1,0 +1,14 @@
+
+
+.leftbar{
+  @include box-shadow(1);
+  font-size:1.4rem;
+  &__list{
+    list-style: none;
+  }
+  &__item{
+    &:not(:last-child){
+      
+    }
+  }
+}

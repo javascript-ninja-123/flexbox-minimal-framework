@@ -1,0 +1,67 @@
+
+
+.container-page{
+  width:90vw;
+  margin:0 auto;
+}
+
+.container-full{
+  width:100vw;
+}
+
+.container{
+  width:90%;
+  margin:0 auto;
+}
+
+
+.flex{
+  display:flex;
+}
+
+.flex-row{
+  @extend .flex;
+  flex-direction: row;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.flex-column{
+  @extend .flex;
+  flex-direction: column;
+}
+
+.just-start{
+  justify-content: flex-start;
+}
+
+.just-center{
+  justify-content: center;
+}
+
+.just-end{
+  justify-content: flex-end;
+}
+.align-center{
+  align-items: center;
+}
+
+
+.flex-20p{
+  flex: 0 0 20%;
+}
+
+@for $i from 1 through 10{
+  .flex-#{$i}0p{
+    flex: 0 0 $i * 10%;
+  }
+}
+
+
+@for $i from 1 through 8{
+  .flex-#{$i}{
+    flex:$i;
+  }
+}

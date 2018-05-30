@@ -1,0 +1,19 @@
+{
+  "name": "flexbox-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "live-server",
+    "build": "node-sass sass/main.scss css/style.css -w",
+    "minify":"uglifycss css/style.css > css/style.min.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.0",
+    "node-sass": "^4.9.0",
+    "uglifycss": "0.0.29"
+  }
+}
