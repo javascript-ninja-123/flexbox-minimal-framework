@@ -24,9 +24,6 @@
   flex-direction: row;
 }
 
-.flex-wrap{
-  flex-wrap: wrap;
-}
 
 .flex-column{
   @extend .flex;
@@ -63,5 +60,34 @@
 @for $i from 1 through 8{
   .flex-#{$i}{
     flex:$i;
+  }
+}
+
+
+
+
+
+
+
+.flex-wrap-big-laptop{
+  @include for-size(for-big-desktop-up){
+    @include responsive-default;
+  }
+}
+.flex-wrap-laptop{
+  @include for-size(for-desktop-up){
+      @include responsive-default;
+  }
+}
+
+.flex-wrap-tablet{
+  @include for-size(for-tablet-landscape-up){
+    @include responsive-default;
+  }
+}
+
+.flex-wrap-phone{
+  @include for-size(for-phone-only){
+    @include responsive-default;
   }
 }

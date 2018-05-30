@@ -4,4 +4,7 @@
   font-size:1.3rem;
   border-radius: 5px;
   margin:0 1rem;
+  @include for-size(for-tablet-landscape-up){
+      margin:1rem 0;
+  }
 }

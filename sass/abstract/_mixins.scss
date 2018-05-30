@@ -16,3 +16,29 @@
 @mixin minHeight($value){
   min-height:calc(100vh - $value);
 }
+
+
+@mixin for-size($size){
+  @if $size == for-phone-only{
+    @media (max-width:$for-phone-only){@content;}
+  }
+  @else if $size == for-tablet-portrait-up{
+    @media (max-width:$for-tablet-portrait-up){@content;}
+  }
+  @else if $size == for-tablet-landscape-up{
+    @media (max-width:$for-tablet-landscape-up){@content;}
+  }
+  @else if $size == for-desktop-up{
+    @media (max-width:$for-desktop-up){@content;}
+  }
+  @else if $size == for-big-desktop-up{
+    @media (max-width:$for-big-desktop-up){@content;}
+  }
+}
+
+
+@mixin responsive-default{
+  ///responsive
+    flex-direction: column !important;
+    align-items: stretch !important;
+}

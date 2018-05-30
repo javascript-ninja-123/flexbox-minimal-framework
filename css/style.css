@@ -26,9 +26,6 @@
 .flex-row {
   flex-direction: row; }
 
-.flex-wrap {
-  flex-wrap: wrap; }
-
 .flex-column {
   flex-direction: column; }
 
@@ -100,6 +97,26 @@
 
 .flex-8 {
   flex: 8; }
+
+@media (max-width: 1800px) {
+  .flex-wrap-big-laptop {
+    flex-direction: column !important;
+    align-items: stretch !important; } }
+
+@media (max-width: 1200px) {
+  .flex-wrap-laptop {
+    flex-direction: column !important;
+    align-items: stretch !important; } }
+
+@media (max-width: 900px) {
+  .flex-wrap-tablet {
+    flex-direction: column !important;
+    align-items: stretch !important; } }
+
+@media (max-width: 599px) {
+  .flex-wrap-phone {
+    flex-direction: column !important;
+    align-items: stretch !important; } }
 
 .text-center {
   text-align: center; }
@@ -266,6 +283,9 @@ body {
   font-size: 1.3rem;
   border-radius: 5px;
   margin: 0 1rem; }
+  @media (max-width: 900px) {
+    .bar {
+      margin: 1rem 0; } }
 
 .content {
   overflow-y: scroll; }
